@@ -1,0 +1,59 @@
+mqtt:
+
+ - sensor:
+      unique_id: "esterownik_mode"
+      name: "Tryb pracy"
+      state_topic: "esterownik/mode"
+  - binary_sensor:
+      unique_id: "esterownik_blower"
+      name: "Dmuchawa"
+      state_topic: "esterownik/blower"
+  - binary_sensor:
+      unique_id: "esterownik_feeder"
+      name: "Podajnik"
+      state_topic: "esterownik/feeder"
+  - binary_sensor:
+      unique_id: "esterownik_pump_domestic_water"
+      name: "Pompa CWU"
+      state_topic: "esterownik/pump_domestic_water"
+  - binary_sensor:
+      unique_id: "esterownik_pump_technic_water"
+      name: "Pompa CO"
+      state_topic: "esterownik/pump_technic_water"
+  - sensor:
+      unique_id: "esterownik_temp_exhaust"
+      name: "Temperatura spalin"
+      state_topic: "esterownik/temperature/exhaust"
+      unit_of_measurement: "℃"
+      icon: "mdi:thermometer"
+  - sensor:
+      unique_id: "esterownik_temp_domestic_water"
+      name: "Temperatura CWU"
+      state_topic: "esterownik/temperature/domestic_water"
+      unit_of_measurement: "℃"
+      icon: "mdi:thermometer"
+  - sensor:
+      unique_id: "esterownik_temp_technic_water_output"
+      name: "Temperatura CO"
+      state_topic: "esterownik/temperature/technic_water_output"
+      unit_of_measurement: "℃"
+      icon: "mdi:thermometer"
+  - sensor:
+      unique_id: "esterownik_temp_technic_water_input"
+      name: "Temperatura CO (powrót)"
+      state_topic: "esterownik/temperature/technic_water_input"
+      unit_of_measurement: "℃"
+      icon: "mdi:thermometer"
+  - sensor:
+      unique_id: "esterownik_temp_feeder"
+      name: "Temperatura podajnika"
+      state_topic: "esterownik/temperature/feeder"
+      unit_of_measurement: "℃"
+      icon: "mdi:thermometer"
+  - sensor:
+      unique_id: "esterownik_temp_outdoor"
+      name: "Temperatura na zewnątrz"
+      state_topic: "esterownik/temperature/outdoor"
+      unit_of_measurement: "℃"
+      icon: "mdi:thermometer"
+
