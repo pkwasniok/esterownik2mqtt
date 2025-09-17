@@ -67,7 +67,3 @@ class Esterownik:
                 pump_technic_water_b_enabled = bool(response[32] & (1 << 4)),
                 temperatures=temperatures)
 
-
-esterownik = Esterownik('192.168.1.137', 'admin', 'admin')
-print(esterownik.get_status())
-
